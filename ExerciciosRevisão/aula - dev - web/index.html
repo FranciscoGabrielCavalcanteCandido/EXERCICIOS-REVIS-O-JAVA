@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Hello World</title>
+    <style type = "text/css">
+        .formatacaoDivInput{
+            border: 1px solid rgb(158, 98, 255);
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Minha primeira calculadora </h1>
+    <p> Está é uma calculadora para somar dois numeros </p>
+    <input type="button" value="esconder/mostrar" onclick="esconderMostrar()"/> 
+    <div id="divCalculadora" style ="border: 2px solid rgb(48, 48, 48); background-color: rgb(164, 85, 239); padding: 10px">
+        <div class="formatacaoDivInput">
+        <h3> Valor 1 </h3>
+        <div>
+            <input type="text" id="valor1"/>
+            
+        </div>
+            <br /><br>
+        <div>
+            <h3> Valor2 </h3>
+            <input type="text" id="valor2"/>
+        </div>
+        <br /><br>
+        <input type="button" value="somar" onclick="somar()"/>
+        <input type="button" value="limpar" onclick="limpar()"/>
+        <br /><br>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
